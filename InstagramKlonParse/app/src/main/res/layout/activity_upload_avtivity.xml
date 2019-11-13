@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCF9F9"
+    tools:context=".UploadAvtivity">
+
+    <ImageView
+        android:id="@+id/imageViewResim"
+        android:layout_width="250dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewYorum"
+        android:onClick="resimsec"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/resim" />
+
+    <Button
+        android:id="@+id/paylasButton"
+        style="@android:style/Widget.Material.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginBottom="200dp"
+        android:background="#D8FFFDFD"
+        android:onClick="upload"
+        android:text="Paylaş"
+        android:textColor="#E77E15"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/textViewYorum"
+        android:layout_width="250dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="317dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Yorumlar"
+        android:textColor="#C97F04"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageViewResim"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewResim" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/as" android:title="Ana Sayfa" android:icon="@drawable/ic_ana_sayfa" />
+    <item android:id="@+id/girisyap" android:title="Giriş Yap" android:icon="@drawable/ic_giris"/>
+    <item android:id="@+id/ayarlar" android:title="Ayarlar" android:icon="@drawable/ic_ayarlar"/>
+    <item android:id="@+id/oyunhakkinda" android:title="Oyun Hakkında" android:icon="@drawable/ic_hakkinda"/>
+    <item android:id="@+id/cikisyap" android:title="Çıkış Yap" android:icon="@drawable/ic_cikis"/>
+
+</menu>

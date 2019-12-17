@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/anaLayout"
+    >
+
+    <EditText
+        android:id="@+id/editTextAdi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="161dp"
+        android:layout_marginBottom="188dp"
+        android:ems="10"
+        android:hint="Adınız:"
+        android:inputType="textPersonName"
+        android:textColor="#703BCE"
+        android:textColorHint="#7163BD"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/adTW"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextMeslegi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Mesleğiniz:"
+        android:inputType="textPersonName"
+        android:textColor="#703BCE"
+        android:textColorHint="#7163BD"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextAdi"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAdi" />
+
+    <Button
+        android:id="@+id/kaydetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="#AEADD3"
+        android:onClick="kaydet"
+        android:shadowColor="#3F4196"
+        android:text="Kaydet"
+        android:textColor="#523CB6"
+        android:textColorHint="#4643A8"
+        app:layout_constraintStart_toStartOf="@+id/editTextMeslegi"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMeslegi" />
+
+    <Button
+        android:id="@+id/getirButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="140dp"
+        android:background="#AEADD3"
+        android:onClick="getir"
+        android:text="Getir"
+        android:textColorHint="#4643A8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/editTextMeslegi"
+        app:layout_constraintTop_toBottomOf="@+id/editTextMeslegi" />
+
+    <TextView
+        android:id="@+id/adTW"
+        android:layout_width="107dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="17dp"
+        android:gravity="center_vertical"
+        android:text="Adınız"
+        app:layout_constraintBottom_toTopOf="@+id/meslekTW"
+        app:layout_constraintStart_toStartOf="@+id/meslekTW"
+        app:layout_constraintTop_toBottomOf="@+id/editTextAdi" />
+
+    <TextView
+        android:id="@+id/meslekTW"
+        android:layout_width="107dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="121dp"
+        android:layout_marginBottom="106dp"
+        android:gravity="center_vertical"
+        android:text="Mesleğiniz"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/adTW" />
+
+    <Switch
+        android:id="@+id/switchRenk"
+        android:layout_width="139dp"
+        android:layout_height="34dp"
+        android:text="Rengi Değiştir  "
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.105" />
+</androidx.constraintlayout.widget.ConstraintLayout>

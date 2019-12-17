@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4CA2B8"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonKaydet"
+        android:layout_width="0dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="49dp"
+        android:background="#B494BB"
+        android:onClick="kaydet"
+        android:text="Kaydet"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonGetir"
+        app:layout_constraintEnd_toStartOf="@+id/buttonGetir"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonGetir"
+        android:layout_width="0dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="76dp"
+        android:background="#B494BB"
+        android:onClick="getir"
+        android:text="Getir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonKaydet"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="418dp"
+        android:layout_height="8dp"
+        android:background="#B494BB"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.28"
+        tools:layout_editor_absoluteX="-4dp" />
+
+    <TextView
+        android:id="@+id/textViewData"
+        android:layout_width="323dp"
+        android:layout_height="215dp"
+        android:layout_marginStart="44dp"
+        android:background="#B494BB"
+        android:gravity="center"
+        android:text="Data"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.564" />
+</androidx.constraintlayout.widget.ConstraintLayout>
